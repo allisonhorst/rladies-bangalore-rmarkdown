@@ -1,5 +1,5 @@
 ---
-title: "Tips & tips (for fun & functionality) in R Markdown"
+title: "Tips & tricks (for fun & functionality) in R Markdown"
 subtitle: "R-Ladies Bangalore (March 2021)"
 author: "Allison Horst"
 output: 
@@ -11,6 +11,8 @@ output:
 bibliography: refs_file.bib
 nocite: '@*'
 ---
+
+**Note:** This material is based on a previous workshop for the UCSB Quantitative Methods in Social Sciences program by Allison Horst. 
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)

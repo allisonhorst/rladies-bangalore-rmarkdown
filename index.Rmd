@@ -1,5 +1,5 @@
 ---
-title: "Tips & tips for fun reporting in R Markdown"
+title: "Tips & tips (for fun & functionality) in R Markdown"
 subtitle: "R-Ladies Bangalore (March 2021)"
 author: "Allison Horst"
 output: 
@@ -277,6 +277,8 @@ And there are a bunch of other options to explore re: citations and bibliographi
 The citations in full appear at the end of the knitted document. 
 
 **Note:** If the journal you're publishing to has a Citation Style Language (and .csl), you can add that to the YAML to have your bibliography updated accordingly! See more [here](https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html#changing-citation-style).
+
+**Tip:** An easy way to get citations from Zotero into your .bib file in RStudio is to update the default export format in Zotero to BibTeX (Preferences > Export > Default Format >> BibTeX), then you can use the Quick Copy option to drag the citation into your .bib.
 
 ### From R Markdown to R scripts & back with `spin()` and `purl()`
 

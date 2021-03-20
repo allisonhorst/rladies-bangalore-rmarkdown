@@ -181,8 +181,10 @@ Sometimes, you'll want to incorporate something from an R script into an R Markd
 You can script external R scripts like this (from Ch 16.1 of the fantastic [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/) by Yihui Xie, Christophe Dervieux, and Emily Riederer):
 
 ```
-source("your-script.R", local = knitr::knit_global())
+source("your-script.R", )
 ```
+
+**Note:** if your script is in your project, just the above should work. You may need to specify the environment otherwise (e.g. with `local = knitr::knit_global()`).
 
 For example, I can read in my script `my_function.R`, which contains a function `fruit`, which looks like this: 
 
@@ -195,7 +197,7 @@ fruit <- function(apples, bananas, oranges, berries) {
 We can make that available to us in our R Markdown document with:
 
 ```{r, echo = TRUE}
-source("my_function.R", local = knitr::knit_global())
+source("my_function.R")
 ```
 
 Which means then the function is now available for me to use...
